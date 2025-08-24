@@ -18,6 +18,7 @@ function validarFormulario(){
     }else{
         mensagem.innerHTML = "Login efetuado com sucesso";
         mensagem.classList.remove('erro'); 
+        mensagem.style.color = "#0b6e07";
         return true;
     };
 };
