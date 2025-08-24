@@ -3,7 +3,7 @@ function validarFormulario(){
     let senha = document.getElementById('senha').value;
     let mensagem = document.getElementById('mensagem');
 
-    if (nome === "" || senha === "") {
+    if (nome === "" && senha === "") {
         mensagem.innerHTML = "Preencha todos os campos";
         mensagem.classList.add('erro');
         return false;
@@ -17,6 +17,7 @@ function validarFormulario(){
         return false;
     }else{
         mensagem.innerHTML = "Login efetuado com sucesso";
+        mensagem.classList.remove('erro'); 
         return true;
     };
 };
