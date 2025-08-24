@@ -13,16 +13,17 @@
         <div class="container">
             <h1>Login</h1>
 
-            <form action="enviarForm()">
+            <form onsubmit="return validarFormulario()">
                 <label title="nome">Nome</label>
-                <input required placeholder="Digite seu nome" type="text" name="nome" id="nome">
+                <input placeholder="Digite seu nome" type="text" name="nome" id="nome">
 
                 <label title="senha">Senha</label>
-                <input required placeholder="Digite sua senha" type="password" name="senha" id="senha">
+                <input placeholder="Digite sua senha" type="password" name="senha" id="senha">
 
-                <button type="submit" id="enviar">Enviar</button>
-            </form>
-        </div>
+                <button type="submit">Enviar</button>
+            </form>       
+        </div> 
+        <div id="mensagem"></div>
     </main>
     <script src="./scripts/main.js"></script>
 </body>

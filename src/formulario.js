@@ -1,11 +1,22 @@
-const botaoEnviar = document.querySelector("#enviar");
-const nome = document.querySelector("#nome");
-const senha = document.querySelector("#senha");
+function validarFormulario(){
+    let nome = document.getElementById('nome').value;
+    let senha = document.getElementById('senha').value;
+    let mensagem = document.getElementById('mensagem');
 
-function enviarForm(event){
-    event.preventDefault();
-    console.log("Nome: " + nome.value);
-    console.log("Senha: " + senha.value);
-}
-
-botaoEnviar.addEventListener("click", enviarForm);
+    if (nome === "" || senha === "") {
+        mensagem.innerHTML = "Preencha todos os campos";
+        mensagem.classList.add('erro');
+        return false;
+    }else if (nome === ""){
+        mensagem.innerHTML = "Preencha o campo nome";
+        mensagem.classList.add('erro');
+        return false;
+    }else if (senha === ""){
+        mensagem.innerHTML = "Preencha o campo senha";
+        mensagem.classList.add('erro');
+        return false;
+    }else{
+        mensagem.innerHTML = "Login efetuado com sucesso";
+        return true;
+    };
+};

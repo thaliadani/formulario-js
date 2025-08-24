@@ -78,3 +78,13 @@ form button:active{
     background-color: #ffffff;
     color: #000;
 }
+
+#mensagem{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #0b6e07;
+}
+
+#mensagem .erro{
+    color: #ff0000;
+}
