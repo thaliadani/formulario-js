@@ -28,14 +28,15 @@ main{
     border: 4px solid #000;
     padding: 2rem;
     border-radius: 2rem;
-    background: linear-gradient(144deg,#000000 0%, #00586f 80%);
-    width: 40%;
+    background: linear-gradient(144deg,#000000 0%, #059bc0 80%);
+    width: 80%;
     color: #fff;
     box-shadow: 12px 14px 21px -4px rgba(0,0,0,0.75);
 }
 
 .container h1{
     font-size: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 form{
@@ -47,19 +48,19 @@ form{
 }
 
 form label{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 form input{
     padding: 1rem;
-    border-radius: 6px;
-    border: 2px solid #000;
+    border-radius: 10px;
+    border: 2px solid #000000;
     background-color: #ffffff00;
-    color: #fff;
+    color: #ffffff;
 }
 
 form input::placeholder{
-    color: #fff;
+    color: #ffffff;
 }
 
 form button{
